@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 550px;
+            width: 550px;
+            border: 2px solid red;
+            position: relative;
+            left: 550px;
+            top: 100px;
+            background-color: black;
+            border-radius: 20PX;
+        }
+        .main{
+            height: 100px;
+            width: 100px;
+            border: 2px solid blue;
+            position: relative;
+            left: 225px;
+            top: 225px;
+            background-color: aqua;
+            border-radius: 20px;
+        }
+        radio{
+            background-color: red;
+            font-size: 20px;
+            border-radius: px;
+            position: relative;
+            left: 150px;
+            top: 50px;
+            border-radius: 10px;
+            color:white;
+            word-spacing: 30px;
+        }
+        /* .box1:active ~ .main{ */
+
+        .box1:hover ~ .main{   
+
+            transform: rotate(160deg);
+            /* transform: rotateX(160deg); */
+            /* transform: rotateY(160deg); */
+        }
+        /* .box2:active ~ .main{ */
+        .box2:hover ~ .main{ 
+            transform: skew(65deg);
+            /* transform: skewX(65deg); */
+            /* transform: skewY(65deg); */
+        }
+        /* .box3:active ~ .main{ */
+        .box3:hover ~ .main{ 
+            transform: translate(120px,20px);
+            /* transform: translateX(120px); */
+            /* transform: translateY(120px); */
+        }
+        /* .box4:active ~ .main{ */
+        .box4:hover ~ .main{ 
+            transform: Scale(3);
+        }
+    </style>
+ </head>
+ <body>
+    <div class="box">
+        <radio class="box1">Rotate</radio>
+        <radio class="box2">Skew</radio>
+        <radio class="box3">Trnsalte</radio>
+        <radio class="box4">Scale</radio>
+        <div class="main"></div>
+    </div>
+ </body>
+ </html>
