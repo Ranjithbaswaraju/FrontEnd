@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=w, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <center> 
+    <form>
+        <h2>Step 1 : Your details</h2>
+        <label for="name">Name</label>
+        <input type="text" placeholder="First and last name" id="name"><br><br>
+        <label for="mail">Email</label>
+        <input type="email" placeholder="example@doamin.com" id="mail"><br><br>
+        <label for="mobile">Phone</label>
+        <input type="tel" placeholder="Eg. +447500000000" id="mobile">
+
+        <h2>Step 2:Delivery address</h2>
+        <label for="add">Address</label>
+        <textarea id="add" ></textarea><br><br>
+        <label for="post">Post code</label>
+        <input type="text"  id="post"><br><br>
+        <label for="country">Country</label>
+        <input type="text" id="country">
+        <h2>Step 3:Card details</h2>
+        <p>Card details</p>
+        <input type="radio" id="visa" name="card">
+        <label for="visa"><img src="https://e7.pngegg.com/pngimages/651/814/png-clipart-logo-visa-credit-card-wordmark-atm-card-visa-blue-text.png" height="15">Visa</label>
+        <input type="radio" id="AmEx" name="card">
+        <label for="AmEx"><img src="data:image/png;base64,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" height="15">AmEx</label>
+        <input type="radio" id="Mastercard" name="card">
+        <label for="Mastercard"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShIQUmYKwlCVFMcbxvoIXzg2NdhjprAyoJnQqQgRKqow&s" height="15">Master card</label><br><br>
+        <label for="number">Card number</label> 
+        <input type="text" id="number"><br><br>
+        <label for="Security">Security code</label>
+        <input type="text" id="Security">  <br><br>
+        <label for="Names">Name on card</label>
+        <input type="text" id="Names" placeholder="Exact name as on the card"> 
+        <br><br> 
+        <center><input type="button" value="BUY IT"></center>
+    </form>
+</center>
+</body>
+</html>
