@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Sex</td>
+            <td ><input type="radio" name="sex">Male</td>
+        </tr>
+        <tr>
+            <td ><input type="radio" name="sex">Female</td>
+        </tr>
+        <tr>
+            <td>Eye color</td>
+            <td> 
+            <from>
+                <label for="eye"></label>
+                <select  id="eye">
+                    <option value="Green">Green</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                </select>
+            </td>
+            <tr>
+                <td rowspan="2">Check all that apply</td>
+                <td>
+                    <form>
+                        <input type="checkbox" id="tall">
+                        <label for="tall">Over 6 feet tall</label><br>
+                        <input type="checkbox"  id="pounds">
+                        <label for="pounds">Over 200 pounds</label>
+                    </form>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td colspan="4">Describe your athetic ability<br>
+                <textarea  id="" cols="40" rows="05"></textarea></td>
+                 
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <center> <input type="button" value="Enter my information"></center>
+                </td>
+            </tr>
+            </from>
+        </tr>
+    </table>
+</body>
+</html>
