@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <center> 
+        <h1>Online Application Form</h1>
+    <form>
+        
+        <label for="f_name" >First Name:</label>
+        <input type="text" id="f_name" name="fname" placeholder="Type your first name"><br><br>
+
+        <label for="l_name">Last Name:</label>
+        <input type="text" id="l_name" name="lname" placeholder="Type your last name"><br><br>
+
+        <label for="sex">Gender:</label>
+        <select name="gender" id="sex" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option> 
+        </select><br><br>
+
+        <label for="mble">Mobile:</label>
+        <input type="tel" id="mble" name="phone" required ><br><br>
+        
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="mail" required ><br><br>
+
+        <label for="birth">DOB:</label>
+        <input type="date" id="birth" name="DOB" required><br><br>
+
+        <label for="link">Linkdin:</label>
+        <input type="url" id="link" name="link" placeholder="Provide your linkedin url"><br><br>
+
+        <label for="range">Rate Your Programming skills proficiency:</label>
+        <input type="range" id="range" name="range" min="0" max="9"  required><br><br>
+
+        <p>Please Choose your Primary Skill:</p>
+        <input type="radio" id="html" name="fav_lang" value="Hypertextmarkuplang">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" id="CSS" name="fav_lang" value="CascadingStyleSheets"> 
+        <label for="CSS">CSS</label> <br>
+
+        <input type="radio" id="JS" name="fav_lang" value="Javascript">
+        <label for="JS">JS</label><br><br>
+
+        <p>Choose accounts you have</p>
+        <input type="checkbox" id="hackerank" name="account1" value="hackerank">
+        <label for="hackerank">Hackerank</label><br>
+
+        <input type="checkbox" id="Codechef" name="account2" value="Codechef">
+        <label for="Codechef">Codechef</label><br>
+        
+        <input type="checkbox" id="Leetcode" name="account3" value="Leetcode">
+        <label for="Leetcode">Leetcode</label><br><br>
+
+        <label for="myfile">Upload updated resume:</label>
+        <input type="file" id="myfile" name="file" value="resume" ><br><br>
+        
+        <input type="submit">
+
+    </form>
+
+</center>
+</body>
+</html>
