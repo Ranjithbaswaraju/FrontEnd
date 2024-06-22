@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+
+.first{
+            background-color: green;
+            animation-name: first;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            bottom: 80%;
+           
+        }
+
+        .second{
+            background-color: orange;
+            animation-name: first;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            bottom: 80%;
+            left: 8%;
+            animation-direction: reverse;
+        }
+        .third{
+            background-color: red;
+            animation-name: first;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            bottom: 80%;
+            left: 14%;
+        }
+
+        .fourth{
+            background-color: blue;
+            animation-name: first;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            bottom: 80%;
+            left: 20%;
+            animation-direction: reverse;
+            
+        }
+
+
+        @keyframes first {
+            0% {
+               transform: translateY(10px);
+            }
+           50% {
+                transform: translateY(70px);
+            }
+
+            }
+ div {
+    height: 25px;
+    width: 25px;
+    border-radius: 90%;
+    display: inline-block;
+ }
+</style>
+<body>
+    
+    <h1 style="color: blue;"> Google Assistance Animation</h1>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="fourth"></div>
+
+
+
+</body>
+</html>
