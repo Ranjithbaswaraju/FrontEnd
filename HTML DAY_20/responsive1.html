@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            height: 300px;
+            width: 300px;
+        }
+        @media screen  and (max-width:420px){
+            div{
+                background-color: blue;
+                 
+            }
+            span{
+                visibility :hidden;
+                }
+            
+        }
+        @media screen and (min-width:421px) and (max-width:700px) {
+            div{
+                background-color: aqua;
+            }
+            span{
+                    visibility: visible;
+                }
+            }
+            
+        
+    </style>
+</head>
+<body>
+    <div>
+        <span>Hello</span>
+    </div>
+</body>
+</html>

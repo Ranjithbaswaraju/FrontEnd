@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 600px;
+            display: grid;
+            grid-template-columns: 100px 50px 50px 50px 50px;
+            grid-template-rows: 50px 50px 50px 50px 50px ;
+            justify-content: center;
+            align-content: center;
+        }
+        .parent div{
+            border: 2px solid black;
+            display: grid;
+        }
+        p{
+            text-align: center;  
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div style="grid-column: 1/3; grid-row: 1/3;"><p>Veggies</p></div>
+        <div style="grid-column: 3/6;"><p> Cost</p></div>
+        <div><p>mrp</p></div>
+        <div><p>rp<p></div>
+        <div><p>GST</p></div>
+        <div style="grid-column: 1/3;"><p>Tomato<p></div>
+        <div><p>120<p></div>
+        <div><p>202<p></div>
+        <div><p>300</p></div>
+        <div  style="grid-column: 1/3;"><p>Onion</p></div>
+        <div><p>202</p></div>
+        <div><p>300</p></div>
+        <div><p>300</p></div>
+        <div  style="grid-column: 1/3;"><p>Total</p></div>
+        <div><p>300</p></div>
+        <div><p>300</p></div>
+        <div><p>300</p></div>
+    </div>
+</body>
+</html>

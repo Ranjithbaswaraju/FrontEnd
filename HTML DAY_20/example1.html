@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 600px;
+            
+            display: grid;
+            
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 50px 50px 100px 60px;
+            text-align: center;
+            justify-content: center;
+            align-content:center;
+          
+            
+
+        }
+        .parent div{
+             
+            border: 2px solid black;
+            display: grid;
+            background-color: aqua;
+            
+
+        }
+        p{
+            align-content: center;
+        }
+        h1{
+          color:red;
+          text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+  <h1>
+    HTML LAYOUT
+  </h1>
+    <div class="parent">
+        <div  style="grid-column: 1/4;"><p> Header Section</p></div>
+        <div style="grid-column: 1/4;"><p> Navigation Bar</p></div>
+        <div><p> Index </p></div>
+        <div style="grid-column: 2/4;"><p>Content Section</p></div>
+        <div style="grid-column: 1/4;"><p>Footer Section<p></div>
+    </div>
+</body>
+</html>

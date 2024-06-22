@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+         
+            display: flex;
+            justify-content: center;
+            
+            
+            
+        }
+        .parent > div{
+            height: 450px;
+            width: 350px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;
+
+
+             
+        }
+        img{
+            height: 300px;
+            width: 250px;
+            align-self: center;
+            
+        }
+        h3 ,p{
+            text-align: center;
+
+        }
+        .parent{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        h1{
+            text-align: center;
+        }
+        .parent:hover{
+            transform: scale(1.01);
+             
+        }
+        div:hover{
+            border: 2px solid red;
+            box-shadow: 10px 10px black;
+            
+        }
+        img:hover{
+            transform: scale(0.8);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>My Food</h1>
+    <div class="parent">
+        <div><img src="https://www.w3schools.com/w3images/sandwich.jpg" 
+            >
+            <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        <p></p></div>
+        <div><img src="https://www.w3schools.com/w3images/steak.jpg" 
+            >
+            <h3>Let Me Tell You About This Steak</h3>
+            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+        <div><img src="https://www.w3schools.com/w3images/cherries.jpg" 
+            >
+        <h3>Cherries, interrupted</h3><p>Lorem ipsum text praesent tincidunt ipsum lipsum.
+
+            </p><p>What else?</p></div>
+        <div><img src="https://www.w3schools.com/w3images/wine.jpg" 
+            >
+            <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+   
+    <div ><img src="https://www.w3schools.com/w3images/popsicle.jpg" 
+        >
+        <h3>All I Need Is a Popsicle</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+    <div><img src="https://www.w3schools.com/w3images/salmon.jpg" 
+        >
+        <h3>Salmon For Your Skin</h3>
+        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+    <div><img src="https://www.w3schools.com/w3images/sandwich.jpg" 
+        >
+        <h3>The Perfect Sandwich, A Real Classic</h3>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+    <div ><img src="https://www.w3schools.com/w3images/croissant.jpg" 
+        >
+        <h3>Le French</h3>
+        <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        #parent_div{
+            height: 400px;
+            background-color: red;
+            display: grid;
+            grid-template-columns: 100px 100px ;
+            grid-template-rows: 100px 100px 100px;
+            gap: 5px;
+            justify-content: center;
+            align-content:center;
+        }
+        #parent_div div{
+            background-color: yellow;
+        }
+    </Style>
+</head>
+<body>
+    <div id="parent_div">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
+

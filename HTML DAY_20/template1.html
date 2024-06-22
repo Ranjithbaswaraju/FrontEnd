@@ -1,0 +1,139 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .main{
+      height: 800px;
+      width: 800px;
+      background-color: aqua;
+      position: relative;
+    }
+    .ball{
+      /* here we are using ball sixe =300 if u want to center a div exactly center then we should give left and right values half of the width of the smaller div eg:if we provide the size 500px the largert div is 800px the gap b/w them is 300px then if we want center a smaller div then we should take left and right half in the remianing of the smaller fiv (300px) in 300 half 150px that is i taken */
+      height: 500px;
+      width: 500px;
+      border-radius: 50%;
+      left: 150px;
+      top: 150px;
+      border: 2px dotted blue;
+      /* top: 50%;
+      left: 50%;
+    transform: translate(-50%,-50%); */
+      background-color: red;
+      position: absolute;
+    }
+    /* .ball:hover{
+      transform: scaleX(1.6);
+   
+      transition: all 5s;
+    } */
+  </style>
+</head>
+<body>
+  
+  <div class="main">
+ <h1 style="text-align: center;">center a div exactly at middle </h1>
+    <div class="ball"></div>
+  </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button{
+      border: none;
+      background-color: red;
+      color: white;
+      /* padding-left: 2px;
+      padding-right: 2px; */
+      margin-left: 40px;
+      transition: all 2s;
+      font-size: 30px;
+    }
+    button:hover{
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size:5px;
+      
+    }
+     </style>
+</head>
+<body>
+  <button>TULASI BHAI</button>
+</body>
+</html>
+
+
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: black;
+      margin-top: 50%;
+      margin-left: 20%;
+    }
+    .parent{
+      height: 100px;
+      width: 250px;
+      background-color: red;
+      position: relative;
+    }
+     
+    .ball::before{
+      content: '';
+      width: 20px;
+      height: 15px;
+      background-color: transparent;
+      border-top-right-radius: 20px;
+      box-shadow: 0px -10px 0 0;
+      position: absolute;
+      top: 70%;
+      left: -18px;
+    }
+    .ball::after{
+      content: '';
+      width: 20px;
+      height: 15px;
+      background-color: transparent;
+      border-top-left-radius: 20px;
+      box-shadow: 0px -8px 0 0;
+      position: absolute;
+      top: 71%;
+      left: 48px;
+    }
+    .ball{
+      height: 50px;
+      width: 50px;
+      /* background-color: black; */
+      border-radius: 50%;
+      background-color: blue;
+      position: absolute;
+      top: -40%;
+      left: 80px;
+      border: 5px solid;
+    }
+  </style>
+ </head>
+ <body>
+  <div class="parent">
+    <div class="ball"></div>
+  </div>
+ </body>
+ </html>
