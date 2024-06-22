@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        position: relative;
+        height: 600px;
+        width: 80%;
+        background-color: black;
+        left: 10%;
+        margin-top: 5%;
+        
+      }
+      .parent:hover{
+        box-shadow: 10px 10px red;
+        transform: scale(1.01);
+
+      }
+      .child1{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: red;
+            animation-name: child1;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            text-align: center;
+            box-shadow: 0px 5px 10px 10px wheat;
+             
+         }
+         @keyframes child1{
+            0%{
+                transform: translate(0px,0px);
+
+            }
+            50%{
+                transform: translate(1100px,500px);
+            }
+            100%{
+                transform: translate(0px,0px);
+
+            }
+            
+
+         } 
+      .child2{
+             
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: aqua;
+            animation-name: child;
+            animation-duration: 2s;
+            animation-name: child2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            text-align: center;
+            box-shadow: 0px 5px 10px 10px orange;
+            animation-direction: reverse;
+            
+            } 
+        @keyframes child2{
+            0%{
+                transform: translate(0px,-100px);
+
+
+            }
+            50%{
+                transform: translate(1100px,400px);
+            }
+            100%{
+                transform: translate(0px,100px);
+
+            }
+        }
+
+
+      .child3 {
+        
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: skyblue;
+        animation-name: child3;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        text-align: center;
+        box-shadow: 0px 5px 10px 10px blue;
+      }
+      @keyframes child3{
+        0% {
+          transform: translate(0, 300px);
+
+        }
+        50% {
+          transform: translate(1080px,-200px);
+        }
+        100% {
+          transform: translate(0px,300px);
+        } 
+      }
+       
+
+      .child4{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: purple;
+            animation-name: child4;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            text-align: center;
+            animation-direction: reverse;
+            box-shadow: 0px 5px 10px 10px olive;
+        }
+        @keyframes child4{
+            0%{
+                transform: translate(0px,100px);
+            }
+            50%{
+                transform: translate(1080px,-300px);
+            }
+            100%{
+                transform: translate(0px,100px);
+            }
+        }
+
+
+        .child5{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: yellow;
+            animation-name: child5;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            text-align: center;
+            transform: rotate(360deg);
+            animation-direction: reverse;
+            box-shadow: 0px 5px 10px 10px white;
+        }
+        @keyframes child5{
+            0%{
+                transform: translate(0px,0px);
+            }
+            50%{
+                transform: translate(1080px,-200px);
+            }
+            100%{
+                transform: translate(0px,100px);
+            }
+        }
+        .child6{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: orchid;
+            animation-name: child6;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            transform: rotateY(90deg);
+            box-shadow: 0px 5px 10px 10px white;
+        } 
+        @keyframes child6 {
+            0%{
+                transform: translate(0px,0px);
+                
+            }
+            50%{
+                transform: translate(1080px,-200px);
+                 
+            }
+            100%{
+                transform: translate(0px,0px);
+
+            }
+            
+        }
+        h3{
+            color: black;
+            text-align: center;
+        }
+        h3:hover{
+            transform: scale(1.3);
+            color: red;
+        }
+    </style>
+  </head>
+  <body>
+     <h3>Balls Collision</h3>
+    <div class="parent">
+         
+      <div class="child1">Child1</div>
+      <div class="child2">Child2</div>
+      <div class="child3">Child3</div>
+      <div class="child4">Child4</div>
+      <div class="child5">Child5</div>
+      <div class="child6">Child6</div>
+    </div>
+  </body>
+</html>
