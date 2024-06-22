@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // A lent Rs. 5000 to B for 2 years and Rs. 3000 to C for 4 years on simple interest at the same rate of interest and received Rs. 2200 in all from both of them as interest. The rate of interest per annum is:??
+
+
+var p1 = Number(prompt("Enter the first person's amount:"));
+var t1 = Number(prompt("Enter the first person's time period:"));
+var p2 = Number(prompt("Enter the second person's amount:"));
+var t2 = Number(prompt("Enter the second person's time period:"));
+var i = Number(prompt("Enter the interest received:"));
+
+
+
+var a1 = p1 * t1 / 100;                     //NaN because "string" * "string" is not valid arithmetic
+var a2 = p2 * t2 / 100;                     //NaN because "string" * "string" is not valid arithmetic
+var c = a1 + a2;                            //NaN + NaN is still NaN
+var a = i / c;                              //NaN / NaN is NaN
+
+console.log("The rate of interest per annum:", a +"%");
+
+    </script>
+</body>
+</html>

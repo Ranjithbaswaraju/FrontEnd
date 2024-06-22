@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=+prompt("Enter a number :")
+b=a.toString().length;
+sum=0;
+temp=a;
+while(temp>0){
+    c=temp%10
+    sum+=c**b;
+    temp=parseInt(temp/10)  //15.3  by applying parseint it 15
+}
+console.log(a,sum)
+if(a==sum){
+    console.log("It is armstrong Number")
+}
+else{
+    console.log("Not a armstrong Number")
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>let num = +prompt("Enter a number:");
+        let numStr = num.toString();
+        isSteppingNumber=true
+        for(i=0;i<numStr.length-1;i++){
+            let diff=Math.abs(numStr[i]-numStr[i+1]);
+            if(diff!==1){
+                isSteppingNumber=false
+                break;
+            }
+        }
+        if (isSteppingNumber) {
+            console.log(num + " is a stepping number");
+        } else {
+            console.log(num + " is not a stepping number");
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var amount= +prompt("enter your amount needed : ");
+var years= +prompt("enter number of years: ");
+var sbi_amount=(amount*years*18)/100;
+var ubi_amount=(amount*years*24)/100;
+var icici_amount=(amount*(1.14)**years)-amount;
+var axis_amount=(amount*(1.04)**(2*years))-amount;
+console.log("For SBI (18% SI) :"+sbi_amount);
+console.log("For UBI (24% SI) :"+ubi_amount);
+console.log("For ICICI (14% CI) :"+icici_amount);
+console.log("For Axis Bank (8% CI) :"+axis_amount);
+if(sbi_amount<ubi_amount && sbi_amount<icici_amount && sbi_amount<axis_amount){
+    console.log("SBI bank is the best choice!!")
+}
+else if(ubi_amount<icici_amount && ubi_amount<axis_amount){
+    console.log("UBI bank is the best choice!!")
+}
+else if(icici_amount<axis_amount){
+    console.log("ICICI bank is the best choice!!")
+}
+else{
+    console.log("AXIS bank is the best choice!!")
+}
+    </script>
+</body>
+</html>

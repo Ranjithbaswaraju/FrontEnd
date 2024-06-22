@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let a = +prompt("Enter a number :");
+let sum = 0;
+let c = a * a;
+while (c !== 0) {
+    r = c % 10;
+    sum =sum+ r;
+    c = Math.floor(c / 10); // Use Math.floor to get the correct integer division
+}
+ if (sum === a) {
+    console.log(a," is a neon number");
+} else {
+    console.log(a,"Not a neon number");
+}
+    </script>
+</body>
+</html>

@@ -113,5 +113,28 @@
    <h5>Day-21</h5>
    <a href="https://ranjithbaswaraju.github.io/FrontEnd/HTML%20DAY_21/gradients.html">Task-1</a>
    <a href="https://ranjithbaswaraju.github.io/FrontEnd/HTML%20DAY_21/img.html">Task-2</a>
+   <h3>PROJECT</h3>
+   <a href="https://ranjithbaswaraju.github.io/FrontEnd/PROJECT/projct.html">PROJECT</a>
+
+   <script>
+   var a=function(n){
+    result="";
+    for(let i=0;i<n.length;i++){
+        let char=n.charCodeAt(i)
+        if(char>=65 && char <=90){ // captal to smaller
+            result=result+String.fromCharCode(char+32);
+        }
+        else if(char>=97 && char<=122){//smaller to capital
+            result=result+String.fromCharCode(char-32);
+        }
+        else{//Non alphabetical 
+            result=result+n[i]
+        }
+      
+    }
+      console.log(result)
+}
+var n=prompt("Enter a string :")
+a(n)</script>
 </body>
 </html>

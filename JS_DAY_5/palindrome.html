@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         let a=prompt("Enter a string :");
+// let b=a.split("").reverse().join("");
+// if(a==b){
+//     console.log("palindrome")
+// }
+// else{
+//     console.log("Not a palindrome")
+// }
+
+var a = prompt("Enter a string:");
+var res = ""; // Initialize res as an empty string
+
+for (var i = a.length - 1; i >= 0; i--) {
+    res += a[i];
+}
+
+if (res === a) {
+    console.log("it is a palindrome");
+} else {
+    console.log("not");
+}
+
+    </script>
+</body>
+</html>

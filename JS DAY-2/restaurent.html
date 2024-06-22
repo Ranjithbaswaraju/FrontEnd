@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- You are tasked with creating a program for a restaurant that calculates the bill amount based on the customer's choice of menu items. The restaurant offers three items on its menu: Pizza, Burger, and Salad, each priced differently. Additionally, if the total bill exceeds $50, a 10% discount is applied.
+
+**Requirements:**
+1. The program should display a menu with the available items and their respective prices.
+2. The user should be able to input the number of each item they wish to order.
+3. The program should calculate the total bill based on the customer's order.
+4. If the total bill exceeds $50, a 10% discount should be applied to the bill.
+5. The program should display the total bill amount to the customer.
+
+**Menu Prices:**
+- Pizza: $12 per item
+- Burger: $8 per item
+- Salad: $5 per item
+
+**Tasks:**
+1. **Display the Menu:**
+   - Create a menu that lists the three items along with their prices.
+   - Example:
+     ```
+     Welcome to the Restaurant!
+     Menu:
+     1. Pizza - $12
+     2. Burger - $8
+     3. Salad - $5
+     ```
+
+2. **Get User Input:**
+   - Prompt the user to enter the number of Pizzas they wish to order.
+   - Ensure the input is an integer value (0 or greater).
+   - Prompt the user to enter the number of Burgers they wish to order.
+   - Ensure the input is an integer value (0 or greater).
+   - Prompt the user to enter the number of Salads they wish to order.
+   - Ensure the input is an integer value (0 or greater).
+
+3. **Calculate the Total Bill:**
+   - Calculate the total bill based on the number of each item ordered.
+   - Example Calculation:
+     ```
+     Total bill = (number of Pizzas * 12) + (number of Burgers * 8) + (number of Salads * 5)
+     ```
+
+4. **Apply Discount if Applicable:**
+   - If the total bill exceeds $50, apply a 10% discount.
+   - Example:
+     ```
+     If total bill > 50, total bill = total bill * 0.90
+     ```
+
+5. **Display the Total Bill:**
+   - Display the total bill amount to the customer in a readable format.
+   - Example:
+     ```
+     Total bill amount: $45
+     ```
+
+### Example:
+**Input:**
+```
+Enter the number of Pizzas: 3
+Enter the number of Burgers: 4
+Enter the number of Salads: 2
+```
+
+**Output:**
+```
+Total bill amount: $70.20 (after applying 10% discount) -->
+    <script>
+        console.log('welcome to the restaurant');
+console.log('Menu');
+console.log(' Pizza: $12 per item');
+console.log('Burger: $8 per item');
+console.log('Salads: $5 per item');
+var pizza=prompt("Enter the number of pizzas :");
+var burgers=prompt('Enter the number of burgers  :');
+var salads=prompt('Enter the number of salads :');
+totalbill=((pizza*12)+(burgers*8)+(salads*5));
+if(pizza>=0 && burgers>=0 && salads>=0){
+     console.log(totalbill)
+    
+}
+else{
+        console.log("invalid selection")
+        
+}
+if(totalbill>50){
+    console.log("Total Bill :"+"$"+(totalbill*0.90)+"    Applied 10% disscount on your order")
+    
+}
+
+    </script>
+</body>
+</html>
