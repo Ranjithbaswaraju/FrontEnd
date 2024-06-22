@@ -1,0 +1,95 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Novell Services Login</h1>
+    <fieldset> 
+        <legend>Login Form</legend>
+    <form>
+        <table>
+            <tr> 
+            <td>
+                <label for="name">Username:</label>
+            </td>
+            <td style="width: 50px;"></td>
+            <td>
+                <input type="text"  id="name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="pass">Password:</label>
+            </td>
+            <td style="width: 50px;"></td>
+            <td>
+                <input type="password" id="pass">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="city">City of Employment:</label>
+            </td>
+            <td style="width: 50px;"></td>
+            <td>
+                <input type="text" id="city">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="servers">Web server:</label>
+            </td>
+            <td style="width: 50px;"></td>
+            <td>
+                
+
+                <select name="server" id="servers">
+                <option value="volvo">--choose your server--</option>
+                <option value="saab">Server-1</option>
+                <option value="mercedes">Server-2</option>
+                <option value="audi">Server-3</option>
+            </td>
+        </tr> 
+        </table>
+        <table><br>
+             
+        <tr>
+            <td>Please specify  your role:</td>
+            <td style="width: 20px;"></td>
+            <td>
+                <input type="radio"  id="admin" name="role">
+                <label for="admin">Admin</label><br>
+                <input type="radio" name="role" id="eng">
+                <label for="eng">Engineer</label><br>
+                <input type="radio"  id="mang" name="role">
+                <label for="mang">Manager</label><br>
+                <input type="radio" name="role" id="Guest">
+                <label for="Guest">Guests</label>
+            </td>
+           
+        </tr>
+        <tr>
+            <td>Single sign-on <br>the  following:</td>
+            <td style="width: 30px;"></td>
+            <td>
+                <input type="checkbox"  id="mail">
+                <label for="mail">Mail</label><br>
+                <input type="checkbox"  id="payroll">
+                <label for="payroll">Payroll</label><br>
+                <input type="checkbox"  id="self">
+                <label for="self">Self-service</label>
+                
+            </td>
+            
+        </tr>
+        </table>
+        <input type="submit" value="login">
+        <input type="reset">
+    </form>
+</body>
+</fieldset>
+</html>
