@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var a=[
+        {
+        name:"ranjith",
+        age:35,
+        bloodgroup:"O+"
+      },
+      {
+        name:"Tulasi",
+        age:58,
+        bloodgroup:"B+"
+    },
+    {
+       name:"Sukumar",
+       age:30,
+       bloodgroup:"A+"
+    },
+    {
+       name:"Afrid",
+       age:25,
+       bloodgroup:"B+"
+    },
+    {
+       name:"Manoj",
+       age:40,
+       bloodgroup:"A+"
+    }]
+sum=0
+let i=a.map((value,index,array)=>{
+    sum+=a[index].age  //value["age"]
+    avg=(sum/a.length)
+})
+
+console.log(avg)
+    </script>
+</body>
+</html>

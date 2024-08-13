@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button style="background-color: red;margin-left: 750px;margin-top: 350px;">Click here for Login</button>
+    <script>
+        var btn = document.getElementsByTagName("button");
+        var correct_username = "Ranjith";
+        var correct_password = "Ranjith@123";
+
+        btn[0].addEventListener("click", function() {
+            var username = prompt("Enter a Username:");
+            var password = prompt("Enter a Password:");
+            window.localStorage.setItem('username',username)
+            window.localStorage.setItem('password',password)
+
+            if (username === correct_username && password === correct_password) {
+                window.location.assign("./taskregister2.html");
+            } else {
+                alert("Incorrect credentials. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>

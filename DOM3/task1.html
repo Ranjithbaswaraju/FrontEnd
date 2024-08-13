@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Delete</button>
+    <script>
+        
+        var a=prompt("Enter a name :");
+        var b=prompt("Enter a name :");
+        var c=prompt("Enter a name :");
+        var d=prompt("Enter a name :");
+        localStorage.setItem("vale1",a)
+        localStorage.setItem("vale2",b)
+        localStorage.setItem("vale3",c)
+        localStorage.setItem("vale4",d)
+        btn=document.getElementsByTagName("button")
+        btn[0].addEventListener("click",function(){
+            localStorage.clear()
+        })
+        
+    </script>
+</body>
+</html>

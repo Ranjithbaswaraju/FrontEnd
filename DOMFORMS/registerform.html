@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div{
+            margin-top: 300px;
+            margin-left: 680px;
+            height: 320px;
+            width: 300px;
+            border: 2px solid red;
+            text-align: center;
+        }
+        #name,#email,#phone,#pass,#pass1{
+            margin: 20px;    
+        }
+        form{
+            margin-top: 30px;
+            display: flex;
+        
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>REGISTRATION FORM</h3>
+        <form>
+            <input type="text" id="user">
+            <input type="password" id="pass">
+            <input type="password" id="pass1">
+            <input type="tel" id="mobile">
+            <input type="email" id="email">
+          
+        </form>
+        <button id="btn">Register</button>
+    </div>
+    <script>
+        var user=document.getElementById("user")
+        var pass=document.getElementById("pass")
+        var pass1=document.getElementById("pass1")
+        var mobile=document.getElementById("mobile")
+        var email=document.getElementById("email")
+
+
+        var btn=document.getElementById("btn");
+
+        btn.addEventListener("click",function(){
+            
+
+
+            user1=/^[a-z]+$/.test(user.value)
+            user2=/[a-z]/.test(pass.value) && /[A-Z]/.test(pass.value) && /\d/.test(pass.value) && /[\W_]/.test(pass.value)
+            user3=/[a-z]/.test(pass1.value) && /[A-Z]/.test(pass1.value) && /\d/.test(pass1.value) && /[\W_]/.test(pass1.value)
+            let match = (pass.value === pass1.value);
+            let user4 = /^9\d{9,}$/.test
+            (mobile.value);
+            let user5=/^[a-z0-9]+@gmail.com/.test(email.value)
+
+    if (!user1) {
+        alert("Please enter a valid username");
+    } else if (!user2) {
+        alert("Please enter a valid password that contains at least one lowercase letter, one uppercase letter, one digit, and one special character");
+    }
+    else if (!match) {
+        alert("Passwords do not match");
+    }
+    else if (!user4) {
+        alert("Mobile number should start with '91' and be followed by exactly 8 digits.");
+    }
+    else if(!user5){
+        alert("Email should be correct format")
+    }
+    else{
+        window.location.assign("./form2.html")
+    }
+    })
+    </script>
+</body>
+</html>

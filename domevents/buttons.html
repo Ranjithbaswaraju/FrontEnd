@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 80px;
+            height: 50px;
+            background-color: lightpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid red;
+            border-radius: 10px;
+            margin-top: 400px;
+            margin-left: 800px;
+        }
+        #btn1, #btn2 {
+            background-color: lightpink;
+            width: 30px;
+            border: none;
+           
+        }
+        #zero {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="btn1">-</button>
+        <p id="zero">0</p>
+        <button id="btn2">+</button>
+    </div>
+    <script>
+        let value = document.getElementById("zero");
+        let count = 0;
+        function color() {
+            if (count > 0) {
+                value.style.color = "blue";
+            } else if (count < 0) {
+                value.style.color = "green";
+            } else {
+                value.style.color = "black";
+            }
+        }
+        function minus() {
+            count--;
+            value.textContent = count;
+            color();
+        }
+        function plus() {
+            count++;
+            value.textContent = count;
+            color();
+        }
+        document.getElementById("btn1").addEventListener("click", minus);
+        document.getElementById("btn2").addEventListener("click", plus);
+    </script>
+</body>
+</html>
+
+
+ 
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ const url = 'https://cricbuzz-cricket.p.rapidapi.com/photos/v1/index';
+const options = {
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': '6ff5242508mshf473990ba31d5d9p1081cejsn02b4ad82dbfd',
+		'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com'
+	}
+};
+
+let b=async function(){try{const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}} 
+	
+	
+// b()
+    </script>
+</body>
+</html>

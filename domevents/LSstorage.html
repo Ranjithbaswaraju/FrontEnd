@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color: red;padding: 20px;">
+        <button>hello</button>
+    </div>
+    <button>hello1</button>
+    
+    <script>
+        var btn=document.getElementsByTagName("button")
+        btn[0].addEventListener("click",function(e){
+          
+        localStorage.setItem("item1",10)
+        sessionStorage.setItem("item1",30)
+       
+        window.location.assign("./ls2.html")
+           
+        })
+        </script>
+</body>
+</html>

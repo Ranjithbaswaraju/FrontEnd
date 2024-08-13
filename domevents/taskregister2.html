@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>SEE HERE USER DETAILS</button><br>
+    <button>RETURN TO MAIN PAGE</button>
+    
+    <script>
+       var a=document.createElement("p")
+       var b=document.createElement("p")
+        btn=document.getElementsByTagName("button")
+        btn[0].addEventListener("click",function(){
+            a.innerText="USERNAME :Ranjith"
+            document.body.appendChild(a);
+            b.innerText="password :Ranjith@123"
+            document.body.appendChild(b);
+           
+        })
+        btn[1].addEventListener("click",function(){
+            window.location.assign("./taskregister.html")
+        })
+    </script>
+</body>
+</html>

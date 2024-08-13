@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch("https://fakestoreapi.com/products").then((val)=>{
+            return val.json()//this val is going into next then at line 12 and updates untill the producets is over so 20 arrayes will build
+        }).then((val)=>{
+            console.log(val)
+        })
+    </script>
+</body>
+</html>

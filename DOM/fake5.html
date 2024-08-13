@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="table"></table>
+</body>
+<script>
+    var a = [{
+        "id": 1,
+        "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        }
+    }];
+
+    for (var i = 0; i < a.length; i++) {
+        var b = document.createElement('P');
+        b.innerText = 'S.NO :'+a[i].id;
+        var c = document.createElement('p');
+        c.innerText ='Title :'+a[i].title
+        var d=document.createElement('p')
+        d.innerText='Price :'+a[i].price
+        var e=document.createElement('p')
+        e.innerText='Description: '+a[i].description
+        var f=document.createElement('p')
+        f.innerText='Category :'+a[i].category
+        var imageLabel = document.createElement('strong');
+        imageLabel.innerText = "Image: ";
+        var g=document.createElement("img")
+        g.src= a[i].image
+        g.height=200
+        var h=document.createElement('p')
+        h.innerText='Rating :'+a[i].rating.rate
+        var j=document.createElement('p')
+        j.innerText='Count  :'+a[i].rating.count
+        
+        
+       
+    }
+    document.body.appendChild(b);
+    document.body.appendChild(c);
+    document.body.appendChild(d);
+    document.body.appendChild(e);
+    
+    document.body.appendChild(f);
+    
+    document.body.appendChild(g);
+    document.body.appendChild(h);
+    document.body.appendChild(j);
+    
+    
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color: red;padding: 20px;">
+        <button>hello</button>
+    </div>
+    <script>
+        var divv=document.getElementsByTagName("button")
+
+        divv[0].addEventListener("click",function(e){
+            
+        
+            console.log("button")
+        })
+
+
+
+        var btn=document.getElementsByTagName("div")
+        btn[0].addEventListener("click",function(e){
+          
+            console.log("div")
+           
+        })
+
+    
+
+    </script>
+</body>
+</html>

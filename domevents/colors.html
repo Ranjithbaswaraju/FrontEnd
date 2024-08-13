@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: aqua;padding: 20px;width: 150px;margin-left: 750px;margin-top: 400px;">
+        <h1 id="title">RANJITH</h1>
+    </div>
+    <script>
+        
+        const h1 = document.getElementById("title");
+    
+
+        const userInput = prompt("Enter a day:");
+
+       
+        if(userInput === "monday") {
+            
+            h1.style.color = "red";
+        }
+        
+        else if(userInput === "tuesday") {
+           
+            h1.style.color = "brown";
+        }
+        else if(userInput === "wednesday") {
+           
+           h1.style.color = "orange";
+       }
+       else if(userInput === "thursday") {
+           
+           h1.style.color = "green";
+       }
+       else if(userInput === "friday") {
+           
+           h1.style.color = "pink";
+       }
+       else if(userInput === "saturday") {
+           
+           h1.style.color = "violet";
+       }
+       else if(userInput==="sunday"){
+           
+           h1.style.color = "yellow";
+       }
+       else{
+        console.log(prompt('enter Valid day'))
+       }
+
+       
+        h1.addEventListener("click", function() {
+            h1.style.color = "black";
+            
+        });
+    </script>
+</body>
+</html>

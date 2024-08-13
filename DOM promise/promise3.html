@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var b;
+        var a =new Promise((suc,rej)=>{
+            if(true){
+                suc("Hi i am success!!")
+            }
+            else{
+                rej("Hi i am failure!!")
+            }
+        })
+        //CONSUMING CODE
+        a.then((val)=>{
+            console.log(b)//it will thow undefined 
+            b=val
+            console.log(b)//this will throw output as success output
+        })
+        console.log(b);//this is undefined because in promises we cant access outside the bracests a.then and catch
+    </script>
+</body>
+</html>

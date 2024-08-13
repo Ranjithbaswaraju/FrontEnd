@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table,tr,td,th{
+            border: 2px solid red;
+            border-collapse: collapse;
+            text-align: center;
+            
+        }
+    </style>
+    
+  </head>
+  <body>
+    <table></table>
+    <img src="" alt="" />
+    <script>
+    
+      var table = document.getElementsByTagName("table");
+      var data = JSON.parse(localStorage.getItem("image"));
+
+      var trHeader = document.createElement("tr");
+      var headers=["ID",
+      "Title",
+      "Price",
+        "Category",
+        
+        
+        "Description",
+        
+        "Image",
+        "Rating",
+        "Count",
+      "Seemore.."]
+      for(j=0;j<headers.length;j++){
+        var th=document.createElement("th")
+        th.innerText=headers[j]
+        trHeader.appendChild(th)
+      }
+      table[0].appendChild(trHeader)
+
+      tr = document.createElement("tr");
+
+      td1 = document.createElement("td");
+      td1.innerText = data["id"];
+      td2 = document.createElement("td");
+      td2.innerText = data["title"];
+      td3 = document.createElement("td");
+      td3.innerText = data["price"];
+      td4 = document.createElement("td");
+      td4.innerText = data["category"];
+      td5 = document.createElement("td");
+      td5.innerText = data["description"];
+      td6 = document.createElement("td");
+      image1=document.createElement("img")
+      image1.setAttribute("src",data["image"])
+      image1.setAttribute("width",200)
+      image1.setAttribute("height",200)
+      td6.appendChild(image1)
+      
+
+
+
+      td7 = document.createElement("td");
+      td7.innerText = data["rating"]["rate"];
+
+      td8 = document.createElement("td");
+      td8.innerText = data["rating"]["count"];
+
+      td9 = document.createElement("td");
+      btn = document.createElement("button");
+      btn.innerText = "Seemore..";
+      td9.appendChild(btn);
+
+      btn.addEventListener("click", function () {
+        JSON.stringify(data[0]);
+        localStorage.setItem("image", JSON.stringify(data[0]));
+        window.location.assign("./info2.html");
+      });
+
+      tr.appendChild(td1);
+      tr.appendChild(td2);
+      tr.appendChild(td3);
+      tr.appendChild(td4);
+      tr.appendChild(td5);
+      tr.appendChild(td6);
+      tr.appendChild(td7);
+      tr.appendChild(td8);
+      tr.appendChild(td9);
+
+      table[0].appendChild(tr);
+
+      var hr=document.createElement("hr")
+
+      var head=document.createElement("h2")
+      head.innerText="See reviews"
+       var review1=document.createElement("p")
+      review1.innerText="Good product thanks for the selling the good product and color is good"
+
+      var review=document.createElement("p")
+      review.innerText="Good product thanks for the selling the good product"
+
+       var review2=document.createElement("p")
+      review2.innerText="Good product thanks for the selling the good product and best product till now i didnt seen this kind of products"
+      document.body.appendChild(hr)
+      document.body.appendChild(head)
+      document.body.appendChild(review)
+      document.body.appendChild(review1)
+      document.body.appendChild(review2)
+
+    </script>
+  </body>
+</html>

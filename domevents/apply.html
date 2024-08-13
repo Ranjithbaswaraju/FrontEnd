@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hello(s,u){
+            console.log(s,u)
+            return this
+        }
+        let a={
+            name:"ranjith",
+            age:21
+        }
+        console.log(hello.apply(a,["100","bye"]))
+    </script>
+</body>
+</html>

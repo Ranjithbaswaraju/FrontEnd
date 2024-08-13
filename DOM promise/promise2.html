@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //for false 
+
+        // let a =new Promise((success,failure)=>{
+        //     if(false){
+        //         success("Hi i am success!!")
+        //     }
+        //     else{
+        //         failure("Hi i am failure!!")
+        //     }
+        // })
+        // a.then((val)=>{
+        //     console.log(val);
+        // })
+        // .catch((err)=>{
+        //     console.log(err)//faliure message is displaying
+        // })
+
+
+        //for true
+        let a =new Promise((success,failure)=>{
+            if(true){
+                success("Hi i am success!!")
+            }
+            else{
+                failure("Hi i am failure!!")
+            }
+        })
+        a.then((val)=>{
+            console.log(val);
+        })
+        
+        
+        
+    </script>
+</body>
+</html>

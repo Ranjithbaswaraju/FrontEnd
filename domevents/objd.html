@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj={
+            name:"ranjth",
+            age:21,
+            mobile:9912351561
+        }
+        var {mobile,age}=obj
+        console.log(mobile,age)
+
+        var obj1={
+            name:"ranjth",
+            age:21,
+            mobile:9912351561,
+            killed:{
+                i:"l",
+                h:"Nested "
+            }
+        }
+        var {killed:{h}}=obj1
+        console.log(h)
+    </script>
+</body>
+</html>

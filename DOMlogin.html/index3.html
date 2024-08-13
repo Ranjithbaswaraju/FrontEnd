@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        button{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Congrats!!!</h1>
+    <h1>You have been logged in!</h1>
+    <button>HOME</button>
+    <script>
+        btn=document.getElementsByTagName("button")
+        btn[0].addEventListener("click",function(){
+            window.location.assign("./index1.html")
+        })
+    </script>
+</body>
+</html>

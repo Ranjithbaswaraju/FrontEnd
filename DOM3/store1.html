@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[
+        {
+        name:"ranjith",
+        age:35,
+        bloodgroup:"O+"
+      },
+      {
+        name:"Tulasi",
+        age:58,
+        bloodgroup:"B+"
+    },
+    {
+       name:"Sukumar",
+       age:30,
+       bloodgroup:"A+"
+    },
+    {
+       name:"Afrid",
+       age:25,
+       bloodgroup:"B+"
+    },
+    {
+       name:"Manoj",
+       age:40,
+       bloodgroup:"A+"
+    }]
+b=[]
+let i=a.map((value,index,array)=>{
+    if(a[index].age>=35){
+        b.push(a[index].name )
+        b.push(a[index].bloodgroup)
+    }
+})
+console.log(b)
+    </script>
+</body>
+</html>

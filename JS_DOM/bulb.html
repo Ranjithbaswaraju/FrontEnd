@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var a=document.createElement("img")
+        a.src="https://www.w3schools.com/js/pic_bulboff.gif";
+        document.body.appendChild(a)
+        a.style.display="block"
+        a.style.marginLeft="50%"
+        a.style.marginTop="20%"
+     
+
+
+
+        var b1=document.createElement("button")
+        b1.innerText="LIGHT ON"
+        document.body.appendChild(b1)
+        b1.style.display="inline-block"
+        b1.style.margin="5px"
+        b1.style.marginLeft="48%"
+        
+
+        var b2=document.createElement("button")
+        b2.innerText="LIGHT OFF"
+        document.body.appendChild(b2)
+
+        function on(){
+            a.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+        }
+        function off(){
+            a.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+        }
+
+        b1.onclick=on
+        b2.onclick=off
+
+
+
+        
+    </script>
+</body>
+</html>

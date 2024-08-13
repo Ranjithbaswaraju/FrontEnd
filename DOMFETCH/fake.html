@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>USERS:</h1>
+    <ul> </ul>
+    <script>
+        fetch('https://fakestoreapi.com/products')
+        .then(res=>{
+            return res.json();
+        })
+        .then(data=>{
+            console.log(data)
+            data .forEach(user => {
+                const markup =`<li>${user.description}</li> `
+
+                document.querySelector('ul').insertAdjacentHTML('beforeend',markup )
+            });
+        })
+        .catch(err=>{
+            console.log(error)
+        })
+    </script>
+</body>
+</html>

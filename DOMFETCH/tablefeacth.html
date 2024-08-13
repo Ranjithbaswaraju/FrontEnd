@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 2px solid red;
+        border-collapse: collapse;
+      
+      }
+    </style>
+  </head>
+  <body>
+    <table></table>
+    <script>
+      var header=["id","title"]
+      for(j=0;j<header.length;j++){
+        
+      }
+      fetch("https://fakestoreapi.com/products")
+        .then((val) => val.json())
+        .then((data) => {
+          console.log(data);
+
+          for (let i = 0; i < data.length; i++){
+            table = document.getElementsByTagName("table");
+            tr = document.createElement("tr");
+            d1 = document.createElement("td");
+            d1.innerText = data[i].id;
+            d2 = document.createElement("td");
+            d2.innerText = data[i].title;
+            d3 = document.createElement("td");
+            d3.innerText = data[i].price;
+            d4= document.createElement("td");
+            d4.innerText = data[i].description;
+            d10 = document.createElement("td");
+            d10.innerText = data[i].image;
+            image1 = document.createElement("img");
+            image1.setAttribute("src", data[i].image);
+            image1.width = "100";
+            image1.height = "100";
+            d10.innerText = "";
+            d10.appendChild(image1);
+            d5=document.createElement("td")
+            d5.innerText=data[i].category
+            d6=document.createElement("td")
+            d6.innerText=data[i].rating.count
+            d7=document.createElement("td")
+            d7.innerText=data[i].rating.rate
+            btn=document.createElement("button")
+            btn.innerText="seemore"
+            d8=document.createElement("td")
+            d8.appendChild(btn)
+           
+            d8.appendChild(btn)
+            tr.appendChild(d1);
+            tr.appendChild(d2);
+            tr.appendChild(d3);
+            tr.appendChild(d4)
+            tr.appendChild(d6);
+            tr.appendChild(d7);
+            tr.appendChild(d5);  tr.appendChild(d10);
+    
+            tr.appendChild(d8)
+           
+
+            table[0].appendChild(tr);
+          }
+          btn.addEventListener("click",function(){
+
+JSON.stringify(data[i])
+localStorage.setItem("image",JSON.stringify(data[i]))
+// window.location.assign("./info2.html")
+})
+          
+        });
+      
+    </script>
+  </body>
+</html>

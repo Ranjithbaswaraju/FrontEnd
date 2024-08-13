@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table ,tr,td,th{
+            border: 2px solid red;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+
+        <!-- ALREAY WE HAVE DIV AND ADDING INTO THAT DIV SO USE THIS METHOD -->
+
+    </div>
+    <!-- <h1 class="ranj">p<p>hello</p></h1>
+    <h1 class="ranj">h1<p>hoo</p></h1> -->
+    <script>
+        // var ele=document.getElementsByClassName("ranj")
+        // console.log(ele[1].innerText)
+
+        // var div=document.createElement("div")
+        
+
+        // var a =document.createElement("h1")
+        // a.innerText='hello'
+
+        // var b=document.createElement("pre")
+        // b.innerText="ranjith   baswaraju"
+
+        // var c=document.createElement("hr")
+
+        // var d=document.createElement("center")
+        // d.appendChild(a)
+       
+        
+        // div.appendChild(d)
+        // div.appendChild(b)
+        // div.appendChild(c)
+        // // div.appendChild(d)
+
+        // document.body.appendChild(div)
+
+
+
+        //ALREAY WE HAVE DIV AND ADDING INTO THAT DIV SO USE THIS METHOD
+        var cre_ele=document.createElement("h1")
+        cre_ele.innerText="ranjith"
+
+        var anc=document.createElement("a")
+        anc.innerText="ranjith"
+        anc.href="www.amazon.com"
+
+        var ol=document.createElement("ol")
+
+        var li=document.createElement("li")
+        li.innerText='syguys'
+        // li.innerText='syguys'
+        var li1=document.createElement("li")
+        li.innerText='syguys'
+        ol.appendChild(li)
+        ol.appendChild(li1)
+        li1.innerText="ranjith"
+        ol.appendChild(li1)
+
+
+        var t=document.createElement("table")
+
+        var row1=document.createElement("tr")
+        t.appendChild(row1)
+
+        col1=document.createElement("td")
+        row1.appendChild(col1)
+        col1.innerText="sfjyfsj"
+    
+
+        col2=document.createElement("td")
+        row1.appendChild(col2)
+        col2.innerText="sfdhddj"
+
+        var row2 = document.createElement("tr");
+        t.appendChild(row2);
+
+        var col3 = document.createElement("td");
+        row2.appendChild(col3);
+        col3.innerText = "1";
+        
+        col4=document.createElement("td")
+        row2.appendChild(col4)
+        col4.innerText="sfjyfsjj"
+
+
+        var divvv=document.getElementsByTagName("div")
+        divvv[0].appendChild(cre_ele)
+        divvv[0].appendChild(anc)
+        divvv[0].appendChild(ol)
+        divvv[0].appendChild(col1)
+        divvv[0].appendChild(col2)
+        divvv[0].appendChild(col3)
+        divvv[0].appendChild(col4)
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

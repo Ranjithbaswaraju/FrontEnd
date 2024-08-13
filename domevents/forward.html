@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color: red;padding: 20px;">
+        <button>CLICK ME</button>
+    </div>
+    <button>FORWARD</button>
+    <script>
+        btn=document.getElementsByTagName("button")
+        btn[0].addEventListener("click",function(e){
+            window.location.assign("./back.html")
+        })
+        btn[1].addEventListener("click",function(e){
+            window.history.forward()
+        })
+    </script>
+</body>
+</html>

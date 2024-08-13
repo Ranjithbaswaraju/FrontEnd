@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hello1(){
+            return new Promise((suc,rej)=>{
+                if(false){
+                    suc("Hi i am success!!")
+                }
+                else{
+                    rej("Hi i am failure!!")
+                }
+            })
+        }
+        hello1().then((val)=>{
+            b=val
+            console.log(b)
+        })
+        hello1().catch((err)=>{
+            console.log(err)
+        })
+    </script>
+</body>
+</html>

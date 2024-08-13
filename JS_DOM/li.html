@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=document.createElement("ol")
+        var b=document.createElement("li")
+        b.innerText="Hy"
+        var c=document.createElement("li")
+        c.innerText="bye"
+        var d=document.createElement("li")
+        d.innerText="hello"
+
+        a.append(b,c,d)
+        document.body.appendChild(a)
+
+
+        var ab=document.createElement("button")
+        ab.innerText="click me"
+
+        ab.addEventListener("click",function(){
+            alert("Hello")
+        })
+
+        document.body.appendChild(ab)
+    </script>
+</body>
+</html>

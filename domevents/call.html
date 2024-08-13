@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function hello(ss){
+            console.log(ss)
+            return this
+        }
+       
+        a={
+            name:"ranjth",
+            age:21,
+            // ss:"100"
+        }
+        console.log(hello.call(a,100))
+    </script>
+</body>
+</html>

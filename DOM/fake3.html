@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var a=[{
+    "id": 3,
+    "title": "Mens Cotton Jacket",
+    "price": 55.99,
+    "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 500
+    }
+  }]
+
+
+
+
+
+
+for (var i = 0; i < a.length; i++) {
+        var b = document.createElement('P');
+        b.innerText = 'S.NO :'+a[i].id;
+        var c = document.createElement('p');
+        c.innerText ='Title :'+a[i].title
+        var d=document.createElement('p')
+        d.innerText='Price :'+a[i].price
+        var e=document.createElement('p')
+        e.innerText='Description: '+a[i].description
+        var f=document.createElement('p')
+        f.innerText='Category :'+a[i].category
+        var imageLabel = document.createElement('strong');
+        imageLabel.innerText = "Image: ";
+        var g=document.createElement("img")
+        g.src= a[i].image
+        g.height=200
+        var h=document.createElement('p')
+        h.innerText='Rating :'+a[i].rating.rate
+        var j=document.createElement('p')
+        j.innerText='Count  :'+a[i].rating.count
+        
+        
+       
+    }
+    document.body.appendChild(b);
+    document.body.appendChild(c);
+    document.body.appendChild(d);
+    document.body.appendChild(e);
+    
+    document.body.appendChild(f);
+    
+    document.body.appendChild(g);
+    document.body.appendChild(h);
+    document.body.appendChild(j);
+    </script>
+</body>
+</html>

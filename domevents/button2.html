@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            background-color: lightpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid red;
+            border-radius: 10px;
+            margin-top: 400px;
+            margin-left: 800px;
+        }
+        #btn1, #btn2 {
+            background-color: lightpink;
+            width: 30px;
+            border: none;
+            color: red;
+            font-size: 20px;
+        }
+        #zero {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div>
+        <button id="btn1">-</button>
+        <p id="zero">0</p>
+        <button id="btn2">+</button>
+    </div>
+        <span>Price:</span><span id="price">0</span><br><br>
+        <span>GST:</span><span id="gst" >0</span><br><br>
+        <span>Total price:</span><span id="total" >0</span>
+    <script>
+        let button1 = document.getElementById("btn1");
+        let button2 = document.getElementById("btn2");
+        let value = document.getElementById("zero");
+        let value1 = document.getElementById("price");
+        let value2 = document.getElementById("gst");
+        let value3 = document.getElementById("total");
+        let count = 0;
+        let price = 199;
+
+        function color() {
+            if (count > 0) {
+                value.style.color = "green";
+                let totalPrice = price * count;
+                value1.innerText = totalPrice;
+                value2.innerText = (totalPrice * 1.55)/100;
+                value3.innerText=(totalPrice+(totalPrice * 1.55)/100)
+            } else if (count === 0) {
+                value.style.color = "black";
+                value1.innerText = 0;
+                value2.innerText=0
+                value3.innerText=0
+                window.location.assign("https://www.swiggy.com/checkout")
+                
+            }
+        }
+        button1.addEventListener("click", function() {
+            if (count > 0) {
+                count--;
+                value.innerText = count;
+                color();
+            }
+        });
+
+        button2.addEventListener("click", function() {
+            count++;
+            value.innerText = count;
+            color();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">hello</h1>
+    <button id="btn">Display</button>
+    <script>
+        h1=document.getElementById("h1")
+        btn=document.getElementById("btn")
+        btn.addEventListener("click",function(){
+        
+            if((h1.style.display === 'block' || h1.style.display === '')){
+                h1.style.display='none'
+                
+            }
+            else{
+                h1.style.display='block'
+                h1.style.color='red'
+            }
+            
+        })
+    </script>
+</body>
+</html>

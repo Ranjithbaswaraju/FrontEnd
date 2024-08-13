@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+        div {
+            height: 200px;
+            width: 300px;
+            background-color: red;
+            text-align: center;
+            position: relative;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            gap: 10px; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%; 
+        }
+    </style>
+</head>
+<body>
+  <div>
+    <h3>Login Form</h3>
+    <form>
+    <input type="text" placeholder="Enter Your Username">
+    <input type="text" placeholder="Enter Your Password">
+    <input type="submit">
+    </form>
+    
+</div>
+    <script>
+        var a=document.forms[0];
+        var arr=[]
+        a.addEventListener("submit",function(e){
+            e.preventDefault()
+            console.log(e)
+
+            console.log(e.target[0].value)
+            console.log(e.target[1].value)
+
+           var obj={
+            username:e.target[0].value,
+            password:e.target[1].value
+           }
+           arr.push(obj)
+
+           var predata=JSON.parse(localStorage.getItem("user"))
+
+          var userget=predata.filter((val)=>{
+
+            return val.username==obj.username
+          })
+        
+          if(userget.length!==0){
+
+            if(userget[0].password==obj.password){
+                alert("Login succesfull do u want to go home page")
+                window.location.assign("./index3.html")
+            }
+            else{
+                alert("Password doesn't match")
+            }
+
+
+          }
+          else{
+            alert("user does not exist")
+          }
+
+        })
+    </script>
+</body>
+</html>

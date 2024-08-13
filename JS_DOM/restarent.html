@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td ,th{
+            border: 2px solid red;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        var a=document.createElement("h1")
+        a.innerText="RANJITH RESTAURENT"
+        document.body.appendChild(a);
+
+        var b=document.createElement("center")
+        b.appendChild(a)
+        document.body.appendChild(b)
+
+        var a=document.createElement("hr")
+        document.body.appendChild(a)
+
+        var a=document.createElement("h4")
+        a.innerText="FLAT 50% OFF ON BELOW SCROLLING ITEMS"
+        document.body.appendChild(a)
+
+        var a1=document.createElement("center")
+        a1.appendChild(a)
+        document.body.appendChild(a1)
+        a.style.color="red"
+      
+        a.style.fontSize="1.2em"
+
+        var a=document.createElement("marquee")
+        a.innerText="CHICKEN MANDI || MUTTON MANDI || FISH MANDI || VEG MANDI || PANNER MANDI "
+        document.body.appendChild(a)
+
+        a.style.background="yellow";
+        a.style.fontSize="1.5em"
+
+        //TABLE
+
+        var d=document.createElement("h3")
+        d.innerText="RESTUARENT MENU"
+        document.body.appendChild(d)
+
+        var d1=document.createElement("center")
+        d1.appendChild(d)
+        document.body.appendChild(d1)
+
+        d.style.color="blue"
+
+        var c=document.createElement("table")
+        document.body.appendChild(c)
+        c.style.width="100%"
+        c.style.textAlign="center"
+
+
+        var row=document.createElement("tr")
+        c.appendChild(row)
+        
+        var col=document.createElement("th")
+        row.appendChild(col)
+        col.innerText="S.NO"
+
+        var col1=document.createElement("th")
+        row.appendChild(col1)
+        col1.innerText="VEG - ITEMS"
+
+
+        var col2=document.createElement("th")
+        row.appendChild(col2)
+        col2.innerText="NON-VEG ITEMS"
+
+        
+
+        var row2 = document.createElement("tr");
+        c.appendChild(row2);
+
+        var col5 = document.createElement("td");
+        row2.appendChild(col5);
+        col5.innerText = "1";
+
+        var col6 = document.createElement("td");
+        row2.appendChild(col6);
+        col6.innerHTML = "PANNER BIRYANI <br> PRICE :₹220"
+        
+        var col7 = document.createElement("td");
+        row2.appendChild(col7);
+        col7.innerHTML = "CHICKEN BIRYANI <br>PRICE :₹140";
+
+
+        var row3=document.createElement("tr")
+        c.appendChild(row3)
+
+        var col8=document.createElement("td")
+        row3.appendChild(col8)
+        col8.innerText="2"
+
+        var col9=document.createElement("td")
+        row3.appendChild(col9)
+        col9.innerHTML="JEERA RICE <br>PRICE:₹100"
+
+
+        var col10=document.createElement("td")
+        row3.appendChild(col10)
+        col10.innerHTML="MUTTON BIRYANI <br> PRICE:₹250"
+        
+        //THIRD ROW
+
+        var row4=document.createElement("tr")
+        c.appendChild(row4)
+
+        var col11=document.createElement("td")
+        row4.appendChild(col11)
+        col11.innerText="3"
+
+        var col12=document.createElement("td")
+        row4.appendChild(col12)
+        col12.innerHTML="VEG BIRYANI <br> PRICE:₹200"
+        
+        var col13=document.createElement("td")
+        row4.appendChild(col13)
+        col13.innerHTML="FISH BIRYANI <br> PRICE:450"
+
+        
+
+
+        //5
+
+        var row5=document.createElement("tr")
+        c.appendChild(row5)
+
+        var col14=document.createElement("td")
+        row5.appendChild(col14)
+        col14.innerText="4"
+
+        var col15=document.createElement("td")
+        row5.appendChild(col15)
+        col15.innerHTML="ICE-CREAM <br> PRICE:₹100"
+        
+        var col16=document.createElement("td")
+        row5.appendChild(col16)
+        col16.innerHTML="SHAWARMA <br> PRICE:150"
+
+        
+        
+ 
+        //summary and details
+
+        // var img=document.createElement("details")
+
+        // img.src="https://m.cricbuzz.com/a/img/v1/375x211/i1/c358149/cms-img.jpg"
+        // document.body.appendChild(img)
+
+        // Create details element
+        
+
+        var details=document.createElement("details")
+
+
+
+        var summary=document.createElement("summary")
+        summary.innerText="Click here to See CHICKEN MANDI"
+        details.appendChild(summary)
+        document.body.appendChild(details)
+
+
+        var img=document.createElement("img")
+        img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIu-9mVv1bQo4NjT_Gva5fQbKaTEn_LRMg6Q&s"
+        details.appendChild(img)
+        document.body.appendChild(details)
+        details.style.textAlign="center"
+
+        var details1=document.createElement("details")
+
+        var summary1=document.createElement("summary")
+        summary1.innerText="Click here to See MUTTON MANDI"
+        details1.appendChild(summary1)
+        document.body.appendChild(details1)
+
+        var img=document.createElement("img")
+        img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2mdojYKowq9XViqEp93VCWq66dlQdaJqpqA&s"
+        details1.appendChild(img)
+        document.body.appendChild(details1)
+        details1.style.textAlign="center"
+
+        var details3=document.createElement("details")
+
+        var summary3=document.createElement("summary")
+        summary3.innerText="Click here to See FISH MANDI"
+        details3.appendChild(summary3)
+        document.body.appendChild(details3)
+
+        var img=document.createElement("img")
+        img.src="https://imgmedia.lbb.in/media/2019/06/5cfbfa998bdd993f718396fa_1560017561894.jpg"
+        img.height='150'
+        details3.appendChild(img)
+        document.body.appendChild(details3)
+        details3.style.textAlign="center"
+
+
+        var details4=document.createElement("details")
+
+        var summary4=document.createElement("summary")
+        summary4.innerText="Click here to See VEG MANDI"
+        details4.appendChild(summary4)
+        document.body.appendChild(details4)
+
+        var img=document.createElement("img")
+        img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuLfBVggh_sVS56yclggrt9PRwtb7eQ3pi6w&s"
+        details4.appendChild(img)
+        document.body.appendChild(details4)
+        details4.style.textAlign="center"
+
+
+
+        var details5=document.createElement("details")
+
+        var summary5=document.createElement("summary")
+        summary5.innerText="Click here to See PANNNER MANDI"
+        details5.appendChild(summary5)
+        document.body.appendChild(details5)
+
+        var img=document.createElement("img")
+        img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZf05GLlarbr5bt0wRN8vxkle2Q-tWzHH9sw&s"
+        details5.appendChild(img)
+        document.body.appendChild(details5)
+        details5.style.textAlign="center"
+
+
+        var hr=document.createElement("hr")
+        document.body.appendChild(hr)
+
+
+        //adress
+
+        var thank=document.createElement("h2")
+        thank.innerText="Thank you for Visiting"
+        document.body.appendChild(thank);
+
+        thank.style.textAlign="center"
+        
+
+        var add=document.createElement("p")
+        add.innerHTML="Address: Nizampet X road, JNTU Rd, Kukatpally, Hyderabad,<br> Telangana 500072."
+        document.body.appendChild(add)
+
+        var add1=document.createElement("center")
+        add1.appendChild(add)
+        document.body.appendChild(add1)
+
+
+
+
+        
+
+
+
+
+
+
+        
+        
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+//         //summary and details tags
+//         var d=document.createElement()
+
+
+    </script>
+</body>
+</html>

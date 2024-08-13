@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 100px;
+            height: 400px;
+            width: 300px;
+            border: 2px solid red;
+            text-align: center;
+            
+        }
+        #name,#email,#phone,#pass,#pass1{
+            margin: 20px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Register Form</h3>
+    <form id="form">
+        <input type="text" id="name"><br>
+        <input type="email" id="email"><br>
+        <input type="tel" id="phone"><br>
+        <input type="password" id="pass"><br>
+        <input type="password" id="pass1">
+    </form>
+    <button id="btn">Register</button>
+</div>
+    
+    <script>
+        var form=document.getElementById("form")
+
+        btn=document.getElementById("btn")
+        btn.addEventListener("click",function(){
+           var name1= document.getElementById("name")
+           console.log(name1.value)
+           var name2=document.getElementById("email")
+           console.log(name2.value)
+           var name3=document.getElementById("phone")
+           console.log(name3.value)
+           var name4=document.getElementById("pass")
+           console.log(name4.value)
+           var name5=document.getElementById("pass1")
+            console.log(name5.value)
+          
+            //This is for the clearing the input fields
+            name1.value=" "
+            name2.value=" "
+            name3.value=" "
+            name4.value=" "
+            name5.value=" "
+            
+            
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh; 
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://as1.ftcdn.net/v2/jpg/05/72/99/72/1000_F_572997225_YcgtXdJNIh63x4AhcABhjg7Nw8LtR9Su.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
+        div {
+            height: 400px; 
+            width: 300px; 
+            text-align: center;
+            background-color: black;
+            /* opacity: 0.5; */
+            border-radius: 15px;
+            
+            position: relative;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 20px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-left: 650px;
+        }
+        h3 {
+            margin: 0 0 20px; 
+            color: #fff; 
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            gap: 10px; 
+            width: 100%; 
+            
+        }
+        input[type="text"], input[type="submit"] {
+            width: 100%; 
+            padding: 10px;
+            /* border: none; */
+            border-radius: 5px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin: 5px;
+            background-color:black ;
+            color: white;
+            border-bottom: 2px solid white;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 320px){
+            body{
+                overflow-x: hidden;
+                width: 100%;
+            }
+         form{
+            width: 80%;
+           
+         }
+         div{
+            padding: 0px;
+            margin: 0px;
+
+         }
+        }
+         @media (min-width: 321px) and (max-width:768px){
+            body{
+                overflow-x: hidden;
+                width: 100%;
+            }
+         form{
+            width: 80%;
+           
+         }
+         div{
+            margin-left: 40px;
+            padding: 0px;
+            margin: 0px;
+
+         }
+        } 
+    </style>
+</head>
+<body>
+    <div>
+        <h3 style="font-size: 2em;color:white;">LOGIN FORM</h3>
+        <form>
+            <label for="name" style="color: white;font-size: 20px;">User Name :</label>
+            <input type="text" placeholder="Enter Your Username" id="name">
+            <label for="pass" style="color: white;font-size: 20px;">Password :</label>
+            <input type="text" placeholder="Enter Your Password" id="pass">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        var a = document.forms[0];
+        var arr = [];
+
+        a.addEventListener("submit", function(e) {
+            e.preventDefault();
+            console.log(e);
+
+            console.log(e.target[0].value);
+            console.log(e.target[1].value);
+
+            var obj = {
+                username: e.target[0].value,
+                password: e.target[1].value
+            };
+            arr.push(obj);
+
+            var predata = JSON.parse(localStorage.getItem("user"));
+
+            var userget = predata.filter((val) => {
+                return val.username == obj.username;
+            });
+
+            if (userget.length !== 0) {
+                if (userget[0].password == obj.password) {
+                    alert("Login successful. Do you want to redirect to cricbuzz home page?");
+                    window.location.assign("./indexhome.html");
+                } else {
+                    alert("Password doesn't match");
+                }
+            } else {
+                alert("User does not exist");
+            }
+        });
+    </script>
+</body>
+</html>

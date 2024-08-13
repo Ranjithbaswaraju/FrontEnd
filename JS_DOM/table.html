@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[{
+            name:"ranjith",
+            age:21,
+            mobile:9912351561
+        }]
+
+        var table=document.createElement("table")
+        for(i=0;i<a.length;i++){
+            var tr=document.createElement("tr")
+         
+            var td=document.createElement("td")
+            td.innerText=a.name
+            td.innerText=a.age
+            td.innerText=a.mobile
+
+
+            tr.append(td)
+            table.append(tr)
+        }
+        
+       
+        document.body.appendChild(table)
+        
+       
+
+    </script>
+</body>
+</html>

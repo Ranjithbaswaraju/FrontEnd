@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      .parent{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns:100px 1fr 2fr 100px;
+        grid-template-areas: 
+        "aqua lemon lemon coral"
+        "aqua golden grey green"
+        "aqua child7 child8 green";
+        gap: 10px;
+      }
+      .child1 {
+        background-color: aqua;
+        grid-area: aqua;
+      }
+      .child2 {
+        background-color: lemonchiffon;
+        grid-area: lemon;
+      }
+      .child3 {
+        background-color: lightcoral;
+        grid-area: coral;
+      }
+      .child4 {
+        background-color: lightgoldenrodyellow;
+        grid-area: golden;
+      }
+      .child5 {
+        background-color: lightgrey;
+        grid-area: grey;
+      }
+      .child6 {
+        background-color: lightgreen;
+        grid-area: green;
+      }
+      .child7 {
+        background-color: rgb(102, 148, 148);
+        grid-area: child7;
+      }
+      .child8 {
+        background-color: rgb(100, 125, 125);
+        grid-area: child8;
+      }
+  </style>
+</head>
+
+<body>
+  <script>
+    const parent=document.createElement("div")
+    parent.classList.add("parent")
+
+    const child=[
+        "child1","child2","child3",
+        "child4","child5","child6",
+        "child7","child8"
+    ]
+
+    for(let childs of child){
+        const child=document.createElement("div");
+        child.classList.add(childs)
+        parent.appendChild(child)
+    }
+    document.body.appendChild(parent)
+  </script>
+</body>
+
+</html>
