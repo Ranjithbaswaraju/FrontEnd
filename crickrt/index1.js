@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('http://localhost:3000/data')
+    fetch('https://project-json-g3iq.onrender.com/data')
         .then(response => response.json())
         .then(data => {
             console.log('Data fetched:', data); // Debugging line
