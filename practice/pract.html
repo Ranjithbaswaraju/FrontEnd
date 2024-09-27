@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj={
+           c_drive: [{name:"index.html",extension:"html",drive:"c-drive"},
+            {name:"index1.js",extension:"js",drive:"c-drive"},
+            {name:"index2.css",extension:"css",drive:"c-drive"}],
+
+
+            d_drive:[{name:"index.html",extension:"html",dive:"d-drive"},
+            {name:"index1.js",extension:"js",dive:"d-drive"},
+            {name:"index.css",extension:"css",dive:"d-drive"}],
+
+            e_drive:[{name:"index.html",extension:"html",dive:"d-drive"},
+            {name:"index1.js",extension:"js",dive:"d-drive"},
+            {name:"index.css",extension:"css",dive:"d-drive"}]
+}
+            for(i in obj){
+                var div=document.createElement("div")
+                div.style.height="200px"
+                div.style.width="300px"
+                div.style.border="2px solid red"
+                data=document.createElement('p')
+                data.innerHTML=obj.c_drive["name"]
+                div.append(data)
+                div.append(obj.c_drive["extension"])
+                div.append(obj.c_drive["drive"])
+            }
+            
+            document.body.appendChild(div)
+           
+        
+    </script>
+</body>
+</html>
